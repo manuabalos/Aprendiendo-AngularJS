@@ -1,0 +1,29 @@
+<!--
+		=========================================================================================
+									C U R S O  A N G U L A R J S
+		=========================================================================================
+		Titulo: 02.- Curso de AngularJS. Controllers y Scope.
+		Link: https://www.youtube.com/watch?v=2shJvOVEXAY&list=PLEtcGQaT56cgHfdvGguisToK90z321pRl&index=2	
+		=========================================================================================
+-->
+
+<!DOCTYPE html>
+<html ng-app ="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modelo en Scope</title>    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    </head>
+    <body ng-controller="AlumnoController">
+    	{{alumno.nombre}} estudia el framework {{alumno.framework}}.
+    	<script type="text/javascript">
+    		angular.module('myApp',[]).controller('AlumnoController',function($scope){
+    			$scope.alumno = {
+    				nombre: "Manuel Ábalos",
+    				framework: "AngularJS"
+    			}
+    		});
+    	</script>
+    </body>
+</html>
