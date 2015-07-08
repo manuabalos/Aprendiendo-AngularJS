@@ -1,0 +1,28 @@
+<!--
+		=========================================================================================
+									C U R S O  A N G U L A R J S
+		=========================================================================================
+		Titulo: 03.- Curso de AngularJS. Construir una app cuaderno de alumnos.
+		Link: https://www.youtube.com/watch?v=kVMN4PBvRIM&list=PLEtcGQaT56cgHfdvGguisToK90z321pRl&index=3
+		=========================================================================================
+-->
+
+<!DOCTYPE html>
+<html ng-app ="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modelo en Scope</title>    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    </head>
+    <body ng-controller="AlumnoController">
+    	<h1>Cuaderno Alumnos</h1>
+    	<div>
+    		<div ng-repeat="alumno in alumnos">
+    			<div>{{alumno.nombre}} - {{alumno.telefono}}</div>
+    			<span>{{alumno.curso}}</span>
+    		</div>
+    	</div>
+    	<script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
