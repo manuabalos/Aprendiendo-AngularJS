@@ -1,0 +1,39 @@
+<!--
+		=========================================================================================
+									C U R S O  A N G U L A R J S
+		=========================================================================================
+		Titulo: 06.- Curso de AngularJS. Construir formulario Añadir alumnos.
+		Link: https://www.youtube.com/watch?v=T11nxOb9GdE&index=6&list=PLEtcGQaT56cgHfdvGguisToK90z321pRl
+		=========================================================================================
+-->
+
+<!DOCTYPE html>
+<html ng-app ="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modelo en Scope</title>    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    </head>
+    <body ng-controller="AlumnoController">
+    	<h1>Cuaderno Alumnos</h1>
+    	<div class="wrapper">
+    		<div class="contact-item" ng-repeat="alumno in alumnos | orderBy: 'nombre'">
+    			<div class="nombre">{{alumno.nombre}} - {{alumno.telefono}}</div>
+    			<span class="curso">{{alumno.curso}}</span>
+    		</div>
+    	</div>
+
+        <div class="wrapper">
+            <h2>Añadir un contacto</h2>
+            Nombre: <input type="text" ng-model="nuevoAlumno.nombre"></input>
+            Telefono: <input type="text" ng-model="nuevoAlumno.telefono"></input>
+            Curso: <input type="text" ng-model="nuevoAlumno.curso"></input>
+            <button ng-click="Save()">Guardar</button>
+        </div>
+
+        
+    	<script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
