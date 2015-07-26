@@ -1,0 +1,19 @@
+Videos del tutorial del que se compone el proyecto:
+
+22a.- Curso de AngularJS. Creación rápida de prototipos con Yeoman.
+22b.- Curso de AngularJS. Creación de un Carousel.
+23.- Curso AngularJS. Completar página principal.
+24.- Curso de AngularJS. Automatizar creación M-V-C con Yeomán.
+25.- Curso de AngularJS. Creación de la view artículos.
+26.- Curso de AngularJS. Creación de una galería de imágenes.
+27.- Curso de AngularJS. Crear sistema para puntuar imágenes.
+28.- Curso de AngularJS. Uso de la directiva ng-grid.
+29.- Curso de AngularJS. Creación de una tabla ordenable.
+30.- Curso de AngularJS. Personalizar nombre cabeceras tablas.
+31.- Curso de AngularJS. Aplicar Fltros a tablas.
+32.- Curso de AngularJS. Editar registros de las tablas.
+33.- Curso de AngularJS. Crear ventana añadir miembros.
+34.- Curso AngularJS. Código JavaScript para ventana modal
+35.- Curso de AngularJS. Crear código para cerrar ventana modal.
+36.- Curso de AngularJS. Añadir código para guardar datos miembros.
+37.- Curso de AngularJS. Validar campos formulario en tiempo real.

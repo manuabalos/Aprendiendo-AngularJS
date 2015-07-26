@@ -1,0 +1,23 @@
+
+<carousel interval="setInterval">
+   <slide ng-repeat="slide in slides" active="slide.active">
+   <img class="carousel-image" ng-src="{{slide.image}}"/>
+      <div class="carousel-caption">
+            <h2>{{slide.title}}</h2>
+            <p>{{slide.text}}</p>
+      </div>
+   </slide>
+</carousel>
+
+<div class="nuestra-propuesta">
+  <h1>Bienvenido a Vida Sana</h1>
+  <p>Este es un ejemplo de como podemos usar angularJS con Angular UI y Bootstrap para construir rápidamente un prototipo funcional que puede ser mostrado a los clientes.</p>
+</div>
+
+<div class="row-fluid">
+  <div class="col-md-4" ng-repeat="block in contenido">
+    <img class="img-circle main-img-rounded" ng-src="{{block.img}}">
+    <h3 class="contenido-title">{{block.title}}</h3>
+    <p>{{block.sumario}}</p>
+  </div>
+</div>
